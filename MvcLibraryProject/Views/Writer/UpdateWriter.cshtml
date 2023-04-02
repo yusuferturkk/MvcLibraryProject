@@ -1,0 +1,24 @@
+﻿@model MvcLibraryProject.Models.TblWriter
+
+@{
+    ViewBag.Title = "UpdateWriter";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+}
+
+<h4>Yazar Güncelleme Ekranı</h4>
+<br />
+<form class="form-group" method="post">
+    @Html.Label("Yazar Adı")
+    @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Yazar Soyadı")
+    @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Yazar Detayları")
+    @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Yazar Güncelle</button>
+</form>

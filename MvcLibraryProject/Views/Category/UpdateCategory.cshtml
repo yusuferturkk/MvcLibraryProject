@@ -1,0 +1,16 @@
+﻿@model MvcLibraryProject.Models.TblCategory
+
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+}
+
+<h4>Kategori Güncelleme Ekranı</h4><br />
+<form class="form-group" method="post">
+    @Html.HiddenFor(x => x.CategoryId)
+    @Html.Label("Kategori Adı")
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kategori Güncelle</button>
+</form>

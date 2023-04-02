@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+@Html.Action("PartialHeader", "Layout")
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        @Html.Action("PartialNavbar", "Layout")
+
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    
+                    @Html.Action("PartialStatistic", "Layout")
+
+                    <section class="content card-body">
+                        <div class="container-fluid">
+
+                                @RenderBody()
+
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+        @Html.Action("PartialFooter", "Layout")
+
+    </div>
+    
+    @Html.Action("PartialScript", "Layout")
+
+</body>
+</html>

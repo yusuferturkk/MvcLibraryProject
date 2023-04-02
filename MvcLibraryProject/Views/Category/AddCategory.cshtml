@@ -1,0 +1,15 @@
+﻿@model MvcLibraryProject.Models.TblCategory
+
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+}
+
+<h4>Kategori Ekleme Ekranı</h4><br />
+<form class="form-group" method="post">
+    @Html.Label("Kategori Adı")
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kategori Ekle</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@model MvcLibraryProject.Models.TblWriter
+
+@{
+    ViewBag.Title = "AddWriter";
+    Layout = "~/Views/Layout/_AdminLayout.cshtml";
+}
+
+<h4>Yazar Ekleme Ekranı</h4>
+<br />
+<form class="form-group" method="post">
+    @Html.Label("Yazar Adı")
+    @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Yazar Soyadı")
+    @Html.TextBoxFor(x => x.WriterSurname, new { @class = "form-control" })
+    <br />
+
+    @Html.Label("Yazar Detayları")
+    @Html.TextBoxFor(x => x.WriterDetail, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Yazar Ekle</button>
+</form>
